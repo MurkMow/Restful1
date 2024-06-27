@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Обновить паспортные данные</title>
+</head>
+
+<body>
+<h1>Обновить паспортные данные</h1>
+<form action="#" th:action="@{/UpdatePassport}" method="post">
+    <div>
+        <label for="employeeID">ID сотрудника:</label>
+        <input id="employeeID" name="employeeID">
+    </div>
+    <div>
+        <label for="passportNumber">Новый номер паспорта:</label>
+        <input id="passportNumber" name="passportNumber">
+    </div>
+    <div>
+        <label for="passportDate">Новая дата паспорта:</label>
+        <input id="passportDate" name="passportDate">
+    </div>
+    <div>
+        <button type="submit">Обновить данные</button>
+    </div>
+</form>
+</body>
+
+</html>

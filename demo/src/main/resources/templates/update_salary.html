@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Обновить ЗП</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+<h1>Обновить ЗП</h1>
+<form action="#" th:action="@{/updateSalary}" method="post">
+    <div>
+        <label for="employeeID">ID сотрудника:</label>
+        <input id="employeeID" name="employeeID">
+    </div>
+    <div>
+        <label for="salary">Новая ЗП:</label>
+        <input id="salary" name="salary">
+    </div>
+    <div>
+        <button type="submit">Обновить данные</button>
+    </div>
+</form>
+</body>
+
+</html>
